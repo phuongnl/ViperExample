@@ -13,7 +13,6 @@ class LoadingPresenter: LoadingPresenterInterface {
     var wireframe: LoadingWireframeInterface?
     
     func viewDidLoad() {
-        self.interactor?.startAppService()
         Utils.delay(seconds: 2) {
             self.showMain()
         }

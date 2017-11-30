@@ -8,6 +8,4 @@
 
 protocol LoadingInteractorInterface: class {
     
-    func startAppService()
-    
 }

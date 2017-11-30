@@ -11,7 +11,7 @@ import UIKit
 class ListWireframe: ListWireframeInterface {
     
     class func createListModule() -> UIViewController {
-        let navView = self.mainStoryboard().instantiateViewController(withIdentifier: Storyboards.Main.NavListViewController)
+        let navView: UINavigationController = UIStoryboard(.main).instantiateViewController(withIdentifier: "NavListViewController")
         guard let view = navView.childViewControllers.first as? ListViewController else {
             return UIViewController()
         }
@@ -26,10 +26,6 @@ class ListWireframe: ListWireframeInterface {
         interactor.presenter = presenter
         
         return navView
-    }
-    
-    static func mainStoryboard() -> UIStoryboard {
-        return UIStoryboard(name: Storyboards.Main.name, bundle: Bundle.main)
     }
     
     func showAddScreen(from view: ListViewInterface) {

@@ -12,6 +12,7 @@ class AddPresenter: AddPresenterInterface {
     var interactor: AddInteractorInterface?
     var wireframe: AddWireframeInterface?
     weak var delegate: AddModuleDelegate?
+    var contact: Contact?
     
     func viewDidLoad() {
     }

@@ -15,6 +15,7 @@ class AddViewController: UIViewController {
     
     var presenter: AddPresenterInterface?
     
+    // MARK: - View Lifecyle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,6 +27,7 @@ class AddViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - IBAction
     @IBAction func actionCancel(_ sender: UIButton) {
         self.presenter?.actionCancel()
     }

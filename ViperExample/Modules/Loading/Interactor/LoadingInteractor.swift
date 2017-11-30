@@ -10,8 +10,4 @@ class LoadingInteractor: LoadingInteractorInterface {
     
     var presenter: LoadingInteractorDelegate?
     
-    func startAppService() {
-        AppService.bootstrap()
-    }
-    
 }

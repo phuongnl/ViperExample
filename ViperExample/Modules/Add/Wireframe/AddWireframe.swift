@@ -11,7 +11,7 @@ import UIKit
 class AddWireframe: AddWireframeInterface {
     
     class func createAddModule(with delegate: AddModuleDelegate) -> UIViewController {
-        let navView = self.mainStoryboard().instantiateViewController(withIdentifier: Storyboards.Main.NavAddViewController)
+        let navView: UINavigationController = UIStoryboard(.main).instantiateViewController(withIdentifier: "NavAddViewController")
         guard let view = navView.childViewControllers.first as? AddViewController else {
             return UIViewController()
         }
@@ -27,10 +27,6 @@ class AddWireframe: AddWireframeInterface {
         interactor.presenter = presenter
         
         return navView
-    }
-    
-    static func mainStoryboard() -> UIStoryboard {
-        return UIStoryboard(name: Storyboards.Main.name, bundle: Bundle.main)
     }
     
     func dismissAddContactInterface(from view: AddViewInterface, completion: (() -> Void)?) {

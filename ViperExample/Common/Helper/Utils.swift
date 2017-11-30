@@ -16,7 +16,6 @@ class Utils: NSObject {
         return emailTest.evaluate(with: email)
     }
     
-    
     /// validate full name, just for ascii
     ///
     /// - Parameter fullName: ascii characters

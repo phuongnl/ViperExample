@@ -11,9 +11,7 @@ import UIKit
 class LoadingWireframe: LoadingWireframeInterface {
     
     class func createLoadingModule() -> UIViewController {
-        guard let view = self.loadingStoryboard().instantiateViewController(withIdentifier: Storyboards.Loading.LoadingViewController) as? LoadingViewController else {
-            return UIViewController()
-        }
+        let view: LoadingViewController = UIStoryboard(.loading).instantiateViewController()
         let presenter = LoadingPresenter()
         let interactor = LoadingInteractor()
         let wireframe = LoadingWireframe()
@@ -25,10 +23,6 @@ class LoadingWireframe: LoadingWireframeInterface {
         interactor.presenter = presenter
         
         return view
-    }
-    
-    static func loadingStoryboard() -> UIStoryboard {
-        return UIStoryboard(name: Storyboards.Loading.name, bundle: Bundle.main)
     }
     
     func showMainScreen() {

@@ -10,7 +10,7 @@ import UIKit
 
 class AppService: NSObject {
     
-    class func bootstrap() {
+    class func bootstrap(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
         log.verbose("Start Service")
         
 //        // TabBar

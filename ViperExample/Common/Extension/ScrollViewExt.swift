@@ -1,5 +1,5 @@
 //
-//  ScrollViewExtension.swift
+//  ScrollViewExt.swift
 //  ViperExample
 //
 //  Created by Phuong Nguyen on 11/15/17.
