@@ -31,5 +31,3 @@ class ContactCell: UITableViewCell {
     }
     
 }
-
-extension ContactCell: NibLoadableView {}
