@@ -21,6 +21,7 @@ class ListViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.tableViewList.register(ContactCell.self)
         self.tableViewList.addActivityFooter()
+        self.titleView(.home)
         self.presenter?.viewDidLoad()
     }
     

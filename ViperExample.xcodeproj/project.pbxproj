@@ -68,6 +68,11 @@
 		7FE0D6C81FBBE728007968A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0D6C71FBBE728007968A6 /* AppDelegate.swift */; };
 		7FE0D6DD1FBBE728007968A6 /* ViperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0D6DC1FBBE728007968A6 /* ViperExampleTests.swift */; };
 		7FE0D6E81FBBE728007968A6 /* ViperExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0D6E71FBBE728007968A6 /* ViperExampleUITests.swift */; };
+		7FE317591FD1115A00C947BA /* DataRequestExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE317581FD1115A00C947BA /* DataRequestExt.swift */; };
+		7FE3175D1FD13F3A00C947BA /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE3175C1FD13F3A00C947BA /* ViewControllerExt.swift */; };
+		7FE3175F1FD1415A00C947BA /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE3175E1FD1415A00C947BA /* StringExt.swift */; };
+		7FE317611FD141C300C947BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FE317601FD141C300C947BA /* Localizable.strings */; };
+		7FE317631FD143B900C947BA /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE317621FD143B900C947BA /* Localizable.swift */; };
 		98F1807ABA958139B39E06CE /* Pods_ViperExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4DE1B05159769BE96021A4 /* Pods_ViperExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +164,11 @@
 		7FE0D6E31FBBE728007968A6 /* ViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE0D6E71FBBE728007968A6 /* ViperExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperExampleUITests.swift; sourceTree = "<group>"; };
 		7FE0D6E91FBBE728007968A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FE317581FD1115A00C947BA /* DataRequestExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestExt.swift; sourceTree = "<group>"; };
+		7FE3175C1FD13F3A00C947BA /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
+		7FE3175E1FD1415A00C947BA /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		7FE317601FD141C300C947BA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7FE317621FD143B900C947BA /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		8D4DE1B05159769BE96021A4 /* Pods_ViperExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD2C822F4DABA4BF9EF512A /* Pods-ViperExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperExample/Pods-ViperExample.release.xcconfig"; sourceTree = "<group>"; };
 		A321B5DE0CC3977745294CFB /* Pods-ViperExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperExampleTests/Pods-ViperExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -383,6 +393,9 @@
 				7FB013ED1FBC34D500E31067 /* CollectionViewExt.swift */,
 				7FCC36EC1FBC8C070088C00A /* ScrollViewExt.swift */,
 				7FB2DFA01FCFB68100AC9DB0 /* StoryboardExt.swift */,
+				7FE317581FD1115A00C947BA /* DataRequestExt.swift */,
+				7FE3175C1FD13F3A00C947BA /* ViewControllerExt.swift */,
+				7FE3175E1FD1415A00C947BA /* StringExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -391,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				7FCC36EA1FBC88BE0088C00A /* Utils.swift */,
+				7FE317621FD143B900C947BA /* Localizable.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -410,6 +424,7 @@
 			children = (
 				7FB438841FBBEFD300877739 /* Assets.xcassets */,
 				7FB013E01FBC20D300E31067 /* ViperExample.xcdatamodeld */,
+				7FE317601FD141C300C947BA /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -679,6 +694,7 @@
 				7FB013EC1FBC341400E31067 /* ContactCollectionCell.xib in Resources */,
 				7FB438881FBBEFE100877739 /* LaunchScreen.storyboard in Resources */,
 				7FB438851FBBEFD300877739 /* Assets.xcassets in Resources */,
+				7FE317611FD141C300C947BA /* Localizable.strings in Resources */,
 				7F99CAB61FBC120500C12BD3 /* Loading.storyboard in Resources */,
 				7FB013E61FBC214100E31067 /* ContactCell.xib in Resources */,
 				7FB438891FBBEFE100877739 /* Main.storyboard in Resources */,
@@ -918,6 +934,7 @@
 				7FB013CF1FBC15AF00E31067 /* AddViewInterface.swift in Sources */,
 				7FB013D81FBC15AF00E31067 /* ListViewInterface.swift in Sources */,
 				7F3A90BC1FBE78F900E692AA /* User.swift in Sources */,
+				7FE3175F1FD1415A00C947BA /* StringExt.swift in Sources */,
 				7F6744011FBC3F3A0025F5B4 /* Logger.swift in Sources */,
 				7FB2DFA11FCFB68100AC9DB0 /* StoryboardExt.swift in Sources */,
 				7F96ECDB1FBD379D0065D6A2 /* LocalDataManager.swift in Sources */,
@@ -925,8 +942,11 @@
 				7FB013D91FBC15AF00E31067 /* ListWireframe.swift in Sources */,
 				7FB013C71FBC15AF00E31067 /* LoadingWireframe.swift in Sources */,
 				7F3A90BE1FBE7AC400E692AA /* AppService.swift in Sources */,
+				7FE317631FD143B900C947BA /* Localizable.swift in Sources */,
+				7FE317591FD1115A00C947BA /* DataRequestExt.swift in Sources */,
 				7F96ECF81FBD7B4C0065D6A2 /* Contact+CoreDataProperties.swift in Sources */,
 				7F6743FF1FBC3E9F0025F5B4 /* Routes.swift in Sources */,
+				7FE3175D1FD13F3A00C947BA /* ViewControllerExt.swift in Sources */,
 				7FB013C01FBC15AF00E31067 /* LoadingInteractor.swift in Sources */,
 				7FCC36ED1FBC8C070088C00A /* ScrollViewExt.swift in Sources */,
 				7FB013E51FBC214100E31067 /* ContactCell.swift in Sources */,
