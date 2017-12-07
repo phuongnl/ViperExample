@@ -21,7 +21,7 @@ class User: NSObject {
         self.name = json["name"].string
     }
     
-    class func setCurrentLogInUser(_ user: User) {
+    class func setCurrentLoggedInUser(_ user: User) {
         self.currentUser = user
     }
     

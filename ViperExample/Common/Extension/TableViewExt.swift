@@ -8,8 +8,7 @@
 
 import UIKit
 
-private let kActivityViewTag            = 9998
-
+// MARK: - Reusable View
 protocol ReusableView: class {
     static var nibName: String { get }
 }
@@ -39,8 +38,11 @@ extension UITableView {
     
 }
 
+// MARK: - Activity Footer
+private let kActivityViewTag = 9998
+
 extension UITableView {
-    
+
     func addActivityFooter() {
         let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityIndicatorView.frame = CGRect(x: 0, y: 0, width: self.bounds.width, height: 40)

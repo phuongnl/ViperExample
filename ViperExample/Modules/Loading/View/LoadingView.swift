@@ -28,3 +28,4 @@ class LoadingViewController: UIViewController {
 extension LoadingViewController: LoadingViewInterface {
 
 }
+

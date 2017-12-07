@@ -50,8 +50,8 @@ enum UserRouter: URLRequestConvertible {
     // MARK: URLRequestConvertible
     func asURLRequest() throws -> URLRequest {
         let url = try Routes.root.asURL()
-        var urlRequest = URLRequest(url: url.appendingPathComponent(path))
-        urlRequest.httpMethod = method.rawValue
+        var urlRequest = URLRequest(url: url.appendingPathComponent(self.path))
+        urlRequest.httpMethod = self.method.rawValue
         switch self {
         case .signUp(let parameters):
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: parameters)
